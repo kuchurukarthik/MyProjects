@@ -1,6 +1,4 @@
-import java.util.Scanner;
-//import java.lang.*;
-public class DriverClass {
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -26,24 +24,24 @@ switch(choice)
 {
 case 1:System.out.println("enter number of coke bottles:");
        quantity=s.nextInt();
-       bill1=quantity*30;
+       bill1+=quantity*30;
        System.out.println("bill on cokes:"+bill1);
        
        break;
 case 2:System.out.println("enter number of maaza bottles:");
         quantity=s.nextInt();
-         bill2=quantity*20;
+         bill2+=quantity*20;
         System.out.println("bill on maaza:"+bill2);
                  break;
 case 3:System.out.println("enter number of pieces:");
         quantity=s.nextInt();
-         bill3=quantity*30;
+         bill3+=quantity*30;
         System.out.println("bill on puffs:"+bill3);
         
         break;
 case 4:System.out.println("enter number of water bottles:"); 
         quantity=s.nextInt();
-          bill4=quantity*10;
+          bill4+=quantity*10;
          System.out.println("bill on water bottles:"+bill4);
          
           break;
@@ -67,7 +65,7 @@ if(ReturnMoney<0){
 			temp=temp-inputnext;
 		}
 		if(temp<0) {
-			System.out.println("You have entered more money");
+			//System.out.println("You have entered more money");
 			temp=(temp)*(-1);
 			System.out.println("collect money "+temp);
 			System.out.println("Thankyou visit again!!!!!!");System.exit(0);
@@ -90,7 +88,7 @@ bill=bill1+bill2+bill3+bill4;
 System.out.println("bill is:"+bill);
 System.out.println(".....................");
 if(count==1)
-{System.out.println("Thankyou visit again!!!!!!");
+{System.out.println("Order cancelled");
 	System.exit(0);
 }
 }
